@@ -64,3 +64,13 @@
     color: black;
     background: #C28E0E;
 }
+
+/* Main */
+#main {
+    z-index: 1;
+}
+
+/* Slideshow */
+#slideshow {
+    max-height: 200px;
+}
