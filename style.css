@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+:root {
+    --sliderWidth: ;
+    --sliderTime: ;
+}
+
 /* Headers */
 #header {
     width: 100%;
@@ -65,12 +70,21 @@
     background: #C28E0E;
 }
 
-/* Main */
-#main {
-    z-index: 1;
+/* Slideshow */
+@keyframes slider {
+    0% {transform: translateX()}
+    100% {transform: translateX(var(--sliderWidth))}
 }
 
-/* Slideshow */
 #slideshow {
-    max-height: 200px;
+    background-color: #C28E0E;
+    display: flex;
+    overflow-x: hidden;
+}
+
+#slideshow img {
+    height: 400px;
+    width: auto;
+    padding: 10px 5px;
+    animation: slider var(--sliderTime) linear infinite;
 }
