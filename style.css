@@ -88,3 +88,6 @@
     padding: 10px 5px;
     animation: slider var(--sliderTime) linear infinite;
 }
+
+#slideshow + img {
+}
