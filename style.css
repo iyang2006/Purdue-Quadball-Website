@@ -77,17 +77,40 @@
 }
 
 #slideshow {
-    background-color: #C28E0E;
+    background-color: #c28f0e;
     display: flex;
     overflow-x: hidden;
 }
 
-#slideshow img {
-    height: 400px;
+#slideshow .slideImg {
+    display: flex;
+}
+
+#slideshow .slideImg img {
+    height: 350px;
     width: auto;
     padding: 10px 5px;
     animation: slider var(--sliderTime) linear infinite;
 }
 
-#slideshow + img {
+#slideshow #leftGradient {
+    height: 350px;
+    width: 5%;
+    position: absolute;
+    background: linear-gradient(to left, transparent, #c28f0e);
+    z-index: 1;
+}
+
+#slideshow #rightGradient {
+    height: 350px;
+    width: 5%;
+    position: absolute;
+    right: 0;
+    background: linear-gradient(to right, transparent, #c28f0e);
+    z-index: 1;
+}
+
+/* Slogan */
+#slogan {
+
 }
